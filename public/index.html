@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gogo Predictor | Magic Chess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="card">
+        <h2>🔮 Gogo Predictor</h2>
+
+        <div class="info-bar">
+            <span>Status Input:</span>
+            <span class="counter-display" id="counter">0/7</span>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="enemyInput" placeholder="Masukkan nickname lawan">
+        </div>
+
+        <button class="btn-add" onclick="addEnemy()">➕ Tambah Lawan</button>
+        <div id="enemyList"></div>
+
+        <button class="btn-calc" onclick="calculate()">🚀 Hitung Prediksi</button>
+        <button class="btn-reset" onclick="resetAll()">🔄 Reset</button>
+
+        <div class="result-box">
+            <div class="result-header">Hasil:</div>
+            <div id="result" class="waiting">Menunggu input</div>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
